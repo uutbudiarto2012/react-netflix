@@ -1,5 +1,8 @@
+import './app.scss';
+import Watch from './pages/watch/Watch';
+
 const App = () => {
-  return <div>Hello world!</div>;
+  return <Watch />
 };
 
 export default App;
