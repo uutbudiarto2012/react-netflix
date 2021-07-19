@@ -1,0 +1,87 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom,rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0, 1) 100%), url('../../assets/images/register-bg.jpg');
+    background-size: cover;
+    position: relative;
+
+    .top{
+        .wrapper{
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo{
+                font-weight: 700;
+                color: red;
+                font-size: 36px;
+            }
+            .loginButton{
+                background-color: red;
+                border: none;
+                color: #FFF;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 500;
+                z-index: 2;
+            }
+        }
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: var(--main-color);
+            input{
+                height: 40px;
+                border-radius: 5px;
+                padding: 0 10px;
+                outline: none;
+                background-color: grey;
+                color: white;
+                &::placeholder{
+                    color: lightgray;
+                }
+            }
+            button{
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                font-size: 18px;
+                background-color: red;
+                color: white;
+                font-weight: 500;
+            }
+            span{
+                color: lightgray;
+                b{
+                    color: #FFF;
+                }
+            }
+            small{
+                color: lightgray;
+                b{
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
